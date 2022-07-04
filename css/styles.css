@@ -1,9 +1,12 @@
 :root {
   --main-text-cl: #757575;
+  --title-text-cl: #212121;
+  --accent-text-cl: #2196f3;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   font-style: normal;
   color: var(--main-text-cl);
@@ -38,7 +41,7 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #212121;
+  color: var(--title-text-cl);
 }
 
 .link {
@@ -47,7 +50,7 @@ body {
 }
 
 .nav-link-current {
-  color: #2196f3;
+  color: var(--accent-text-cl);
   text-decoration: none;
 }
 
@@ -55,11 +58,11 @@ body {
 .link:focus,
 .nav-link:focus,
 .nav-link:hover {
-  color: #2196f3;
+  color: var(--accent-text-cl);
 }
 
 .link-current {
-  color: #2196f3;
+  color: var(--accent-text-cl);
 }
 
 /* Шапка */
@@ -91,17 +94,18 @@ body {
 
 .button:focus,
 .button:hover {
-  color: #000000;
+  background: #188CE8;
 }
 
 /* Принципы работы */
 
 .section-name {
   font-weight: 700;
+  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--title-text-cl);
 }
 
 .section-text {
@@ -117,17 +121,21 @@ body {
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-cl);
 }
 
 /* Наша команда */
+
+.title {
+  background: #F5F4FA;
+}
 
 .title-text {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-cl);
 }
 
 .title-name {
@@ -135,11 +143,10 @@ body {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-cl);
 }
 
 .title-proffesion {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
@@ -160,17 +167,18 @@ body {
 
 .link-contact {
   text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
+.link-contact:focus,
+.link-contact:hover {
+  color: var(--accent-text-cl);
+}
+
 .link-addres {
   text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -179,13 +187,14 @@ body {
 /* портфоліо */
 
 .buttons {
+  font-family: inherit;
   background-color: #f5f4fa;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-cl);
   cursor: pointer;
   border: none;
 }
@@ -193,7 +202,7 @@ body {
 .buttons:hover,
 .buttons:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-text-cl);
 }
 
 .project-list {
@@ -209,13 +218,12 @@ body {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--title-text-cl);
 }
 
 .project-section {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--main-text-cl);
 }
