@@ -2,15 +2,29 @@
   --main-text-cl: #757575;
   --title-text-cl: #212121;
   --accent-text-cl: #2196f3;
+  --nav-text-cl: #000000;
+  --second-bg-cl: #2F303A;
+  --second-text-cl: #ffffff;
+  --third-bg-cl:#F5F4FA;
+  --btn-accent-cl: #188CE8;
+  --link-contact-cl: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   color: var(--main-text-cl);
-  background-color: #ffffff;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
 }
 
 /* Навигация */
@@ -28,15 +42,15 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-text-cl);
 }
 
 .logo-part {
-  color: #000000;
+  color: var(--nav-text-cl);
 }
 
-.list {
-  list-style: none;
+.nav {
+  color: var(--nav-text-cl);
 }
 
 .nav-link {
@@ -44,18 +58,13 @@ body {
   color: var(--title-text-cl);
 }
 
-.link {
-  text-decoration: none;
-  color: currentColor;
-}
-
 .nav-link-current {
   color: var(--accent-text-cl);
   text-decoration: none;
 }
 
-.link:hover,
-.link:focus,
+.nav-contact:focus,
+.nav-contact:hover,
 .nav-link:focus,
 .nav-link:hover {
   color: var(--accent-text-cl);
@@ -68,23 +77,24 @@ body {
 /* Шапка */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--second-bg-cl);
 }
 
-.hero-text {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color:var(--second-text-cl);
   text-transform: uppercase;
 }
 
 .button {
-  background-color: #2196f3;
-  color: #ffffff;
+  font-family: 'Roboto';
+  background-color: var(--accent-text-cl);
+  color: var(--second-text-cl);
   font-size: 16px;
-  box-shadow: 0px 4px 4px rgba class 'link' (0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
   line-height: calc(30 / 16);
@@ -94,62 +104,44 @@ body {
 
 .button:focus,
 .button:hover {
-  background: #188CE8;
+  background-color: var(--btn-accent-cl);
 }
 
 /* Принципы работы */
 
-.section-name {
+.about-title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-cl);
 }
 
-.section-text {
-  font-weight: 400;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-}
-
 /* Чем занимаемся */
-
-.heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
-  color: var(--title-text-cl);
-}
 
 /* Наша команда */
 
-.title {
-  background: #F5F4FA;
+.team {
+  background-color: var(--third-bg-cl);
 }
 
-.title-text {
+.title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
   color: var(--title-text-cl);
 }
 
-.title-name {
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
   color: var(--title-text-cl);
 }
 
-.title-proffesion {
+.team-proffesion {
   font-size: 16px;
   line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
 }
 
 /* Футер */
@@ -158,18 +150,15 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--second-bg-cl);
 }
 
 .logo-partfooter {
-  color: #ffffff;
+  color: var(--second-text-cl);
 }
 
 .link-contact {
-  text-decoration: none;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--link-contact-cl)
 }
 
 .link-contact:focus,
@@ -178,17 +167,14 @@ body {
 }
 
 .link-addres {
-  text-decoration: none;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--second-text-cl);
 }
 
 /* портфоліо */
 
 .buttons {
   font-family: inherit;
-  background-color: #f5f4fa;
+  background-color: var(--third-bg-cl);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -201,7 +187,7 @@ body {
 
 .buttons:hover,
 .buttons:focus {
-  color: #ffffff;
+  color: var(--second-text-cl);
   background-color: var(--accent-text-cl);
 }
 
@@ -213,7 +199,7 @@ body {
   text-decoration: none;
 }
 
-.project-text {
+.project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -221,9 +207,7 @@ body {
   color: var(--title-text-cl);
 }
 
-.project-section {
+.project-text {
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
-  color: var(--main-text-cl);
 }
